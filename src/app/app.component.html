@@ -12,10 +12,13 @@
 
 <!-- for schleife in html für angular um den wiederholendes code von oben zu ersetzen  -->
 
-<div class="container">
-  <app-cat-card
-    *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7]"
-    [text]="postText[i]"
-    [image]="catsPics[i]"
-  ></app-cat-card>
+<div class="flex-row">
+  <div class="container">
+    <app-cat-card
+      *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7]"
+      [text]="postText[i]"
+      [image]="catsPics[i]"
+    ></app-cat-card>
+  </div>
+  <app-proposals></app-proposals>
 </div>

@@ -1,4 +1,11 @@
 .container {
-  padding-left: 200px;
+  margin-right: 48px;
+}
+
+.flex-row {
   padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
 }
