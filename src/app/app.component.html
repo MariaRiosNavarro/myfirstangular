@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div class="container">
+<!-- <div class="container">
   <app-cat-card [text]="postText[0]" [image]="catsPics[0]"></app-cat-card>
   <app-cat-card [text]="postText[1]" [image]="catsPics[1]"></app-cat-card>
   <app-cat-card [text]="postText[2]" [image]="catsPics[2]"></app-cat-card>
@@ -8,4 +8,14 @@
   <app-cat-card [text]="postText[5]" [image]="catsPics[5]"></app-cat-card>
   <app-cat-card [text]="postText[6]" [image]="catsPics[6]"></app-cat-card>
   <app-cat-card [text]="postText[7]" [image]="catsPics[7]"></app-cat-card>
+</div> -->
+
+<!-- for schleife in html für angular um den wiederholendes code von oben zu ersetzen  -->
+
+<div class="container">
+  <app-cat-card
+    *ngFor="let i of [0, 1, 2, 3, 4, 5, 6, 7]"
+    [text]="postText[i]"
+    [image]="catsPics[i]"
+  ></app-cat-card>
 </div>
